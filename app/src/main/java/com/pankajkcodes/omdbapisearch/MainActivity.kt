@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         binding.button.setOnClickListener {
             val data = binding.searchView.text.trim().toString()
             if (data != "") {
-                val url = "https://www.omdbapi.com/?apikey=f5ae25d5&t=$data"
+                val url = "https://www.omdbapi.com/?apikey=&t=$data"
                 val jsonObjectRequest =
                     JsonObjectRequest(
                         Request.Method.GET, url, null,
